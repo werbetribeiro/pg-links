@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #000;
+    --header-color: rgba(32, 32, 36, 0.5);
+    --text-color: #FFF;
+    --branco: #FFF;
+    --input-color: #202024;
+    --dtlh-color: #ED1C24;
+    --hover-dtlh: #fc2930;
+    --dev-color: #D0D0D0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    color: var(--dtlh-color);
+    font-family: 'Inter', sans-serif, 'Roboto Mono', monospace;
+  }
+  
+  header {
+    background: var(--header-color);
+    width: 100%;
+    text-align: center;
+    padding: 23px 0px;
+    border-bottom: 2px solid var(--dtlh-color);
+  }
+  
+  main {
+    flex: 1 0 auto;
+  }
+
+  .containetList {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .list-list {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .titulo {
+    text-align: center;
+    margin-top: 2.2rem;
+    background: var(--branco);  
+    border-radius: 0.5rem;
+    padding: 1rem 0 ;  
+    border-top: 5px solid  var(--dtlh-color);
+    text-transform: uppercase;
+}
+
+.titulo2 {
+    text-align: center;
+    margin-top: 2.2rem;
+    background: var(--branco);  
+    border-radius: 0.5rem;
+    padding: 1rem 0 ;  
+    border-top: 5px solid  var(--dtlh-color);
+    text-transform: uppercase;
+}
+
+  ul {
+    list-style: none;
+    width: 350px;
+  }
+
+  ul.online-list li a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    background: var(--dtlh-color);
+    color: var(--branco);
+
+    transition: background 400ms;
+}
+
+ul.online-list li a:hover {
+    background: var(--hover-dtlh);
+}
+
+  footer  {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 23px 70px;
+    color: var(--branco);
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--branco);
+    transition: color 0.3s;  
+  }
+  
+  footer a:hover {
+    color: var(--dev-color);
+  }
